@@ -5,7 +5,14 @@ VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dep-check", "dep-check\dep-check.csproj", "{A1A04079-C05A-40BA-BE9B-49EE4E1C17B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dep-check-xunit", "dep-check-xunit\dep-check-xunit.csproj", "{D1EB5940-CB6D-4B6E-81C5-70D73452E9FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dep-check-xunit", "dep-check-xunit\dep-check-xunit.csproj", "{D1EB5940-CB6D-4B6E-81C5-70D73452E9FB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{60489F23-BA7F-48B2-919A-26F2377705C2}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		.travis.yml = .travis.yml
+		appveyor.yml = appveyor.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
