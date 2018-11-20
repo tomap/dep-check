@@ -1,7 +1,8 @@
 version: '1.0.{build}'
+
 image:
 - Visual Studio 2017
-- Ubuntu
+- Ubuntu1804
 
 build_script:
   - dotnet publish
