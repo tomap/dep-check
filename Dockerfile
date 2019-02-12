@@ -16,7 +16,7 @@ RUN dotnet publish -c Release
 
 RUN dotnet test -c Release /p:CollectCoverage=true	/p:CoverletOutputFormat=opencover /p:Exclude="[xunit*]*"
 
-RUN dotnet tool install dotnet-reportgenerator-globaltool --tool-path /tools
+RUN dotnet tool install dotnet-reportgenerator-globaltool --tool-path tools
 
 RUN tools/reportgenerator -reports:coverage.opencover.xml -targetdir:report -verbosity:Warning
 
