@@ -4,4 +4,6 @@ dist: xenial
 dotnet: 2.2
 script:
  - dotnet publish
- - dotnet test *xunit*
+ - dotnet test *xunit* -c Release /p:CollectCoverage=true	/p:CoverletOutputFormat=opencover /p:Exclude="[xunit*]*"
+ - dotnet tool install dotnet-reportgenerator-globaltool --tool-path tools
+ - tools/reportgenerator -reports:coverage.opencover.xml -targetdir:report -verbosity:Warning
