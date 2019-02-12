@@ -12,13 +12,17 @@ RUN curl -SL "https://nodejs.org/dist/v${NODE_VERSION}/node-v${NODE_VERSION}-lin
 
 COPY . .
 
-RUN dotnet restore
+RUN dotnet publish -c Release
+
+RUN dotnet test -c Release /p:CollectCoverage=true	/p:CoverletOutputFormat=opencover /p:Exclude="[xunit*]*"
+
+RUN dotnet tool install dotnet-reportgenerator-globaltool --tool-path /tools
+
+RUN tools/reportgenerator -reports:coverage.opencover.xml -targetdir:report -verbosity:Warning
 
 RUN npm install
 
 RUN rm -rf /precache
-
-RUN dotnet tool install dotnet-reportgenerator-globaltool --tool-path /tools
 
 RUN apt-get update
 RUN apt-get install -y apt-transport-https gnupg2 software-properties-common
