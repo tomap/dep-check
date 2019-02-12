@@ -8,6 +8,6 @@ build_script:
   - dotnet publish
   - dotnet test dep-check-xunit/ -c Release /p:CollectCoverage=true /p:CoverletOutputFormat=opencover /p:Exclude="[xunit*]*"
   - dotnet tool install dotnet-reportgenerator-globaltool --tool-path /tools
-  - tools/reportgenerator -reports:coverage.opencover.xml -targetdir:report -verbosity:Warning
+  - tools/reportgenerator -reports:dep-check-xunit/coverage.opencover.xml -targetdir:report -verbosity:Warning
 
   
