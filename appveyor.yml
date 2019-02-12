@@ -6,4 +6,5 @@ image:
 
 build_script:
   - dotnet publish
-  - dotnet test dep-check-xunit/
+  - dotnet test dep-check-xunit/ -c Release /p:CollectCoverage=true /p:CoverletOutputFormat=opencover /p:Exclude="[xunit*]*"
+  
