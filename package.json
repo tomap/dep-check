@@ -27,7 +27,7 @@
     "chai": "4.1.2",
     "css": "^2.2.4",
     "css-loader": "0.28.11",
-    "es6-shim": "0.35.4",
+    "es6-shim": "0.35.5",
     "event-source-polyfill": "0.0.12",
     "expose-loader": "0.7.5",
     "extract-text-webpack-plugin": "3.0.2",
