@@ -42,7 +42,7 @@
     "karma-chrome-launcher": "2.2.0",
     "karma-cli": "1.0.1",
     "karma-jasmine": "1.1.1",
-    "karma-webpack": "3.0.0",
+    "karma-webpack": "3.0.5",
     "node-sass": "^4.9.3",
     "preboot": "6.0.0-beta.3",
     "raw-loader": "0.5.1",
