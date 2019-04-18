@@ -21,7 +21,7 @@
     "angular2-router-loader": "0.3.5",
     "angular2-template-loader": "0.6.2",
     "aspnet-prerendering": "^3.0.1",
-    "aspnet-webpack": "^2.0.3",
+    "aspnet-webpack": "^1.0.9",
     "awesome-typescript-loader": "^5.2.1",
     "bootstrap": "^4.1.3",
     "chai": "4.2.0",
