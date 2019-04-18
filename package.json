@@ -13,7 +13,7 @@
     "@angular/platform-browser": "^5.2.11",
     "@angular/platform-browser-dynamic": "^5.2.11",
     "@angular/platform-server": "^5.2.11",
-    "@angular/router": "^5.2.11",
+    "@angular/router": "^0.2.0",
     "@ngtools/webpack": "^7.3.8",
     "@types/chai": "4.1.7",
     "@types/jasmine": "3.3.12",
