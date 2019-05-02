@@ -11,7 +11,7 @@
   <ItemGroup>
     <PackageReference Include="Apache.NMS.ActiveMQ" Version="1.7.2" />
     <PackageReference Include="AutoMapper" Version="8.1.0" />
-    <PackageReference Include="CouchbaseNetClient" Version="2.7.5" />
+    <PackageReference Include="CouchbaseNetClient" Version="2.7.6" />
     <PackageReference Include="Dapper" Version="1.60.6" />
     <PackageReference Include="DapperExtensions.DotnetCore" Version="1.0.1" />
     <PackageReference Include="Flurl" Version="2.8.2" />
