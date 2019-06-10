@@ -67,7 +67,7 @@
     "@types/jquery": "^3.3.6",
     "adal-angular5": "^1.0.36",
     "ajv": "^6.0.0",
-    "angular-calendar": "^0.24.1",
+    "angular-calendar": "^0.27.11",
     "angular-font-awesome": "^3.1.2",
     "chart.js": "^2.7.2",
     "chartjs-plugin-datalabels": "^0.6.0",
