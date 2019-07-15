@@ -20,8 +20,6 @@ RUN dotnet tool install dotnet-reportgenerator-globaltool --tool-path tools
 
 RUN tools/reportgenerator -reports:coverage.opencover.xml -targetdir:report -verbosity:Warning
 
-RUN npm install
-
 RUN rm -rf /precache
 
 RUN apt-get update
